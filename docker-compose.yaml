@@ -10,18 +10,3 @@ services:
       - "8200:8080"
     volumes:
       - ./trilium-data:/home/node/trilium-data
-    networks:
-      - DockerLAN
-
-
-###########
-## REDES ##
-###########
-networks:
-  DockerLAN:  ## Red bridge propia ##
-    name: DockerLAN
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.20.0.0/24      
