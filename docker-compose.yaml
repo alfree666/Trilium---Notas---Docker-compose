@@ -10,3 +10,4 @@ services:
       - "8200:8080"
     volumes:
       - ./trilium-data:/home/node/trilium-data
+      
